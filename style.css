@@ -1,0 +1,302 @@
+/*
+Theme Name:Prato do dia
+Theme URI: http://pratododia.com
+Author: Valmyr Tavares
+Author URI: http://rest.com
+Description: Primeiro tema escrito para wordpress
+Version: 1.0
+*/
+
+/* *******************************8888
+    Geral
+**************************************/
+a{
+    text-decoration: none;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+/* *******************************8888
+    INDEX
+**************************************/
+
+header{
+    position: relative;
+}
+header .contato{
+    position: absolute;
+    top: 82%;
+    left: 7%;
+}
+header .btn-mobile{
+    display:none;
+}
+.logo-header{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 21%;
+}
+.main-menu{
+    position: absolute;
+    top: 82%;
+    left: 38%;   
+    width: 56%;
+    display: flex;
+    justify-content: space-around;
+}
+.main-content{ 
+    width: 100%;
+    background-image:
+}
+.main-content h1{
+    margin:0px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.5vw;
+    font-style: italic;
+    
+}
+.main-content main{
+ width: 90%;
+ margin:10px auto;
+ display:flex;
+ flex-wrap:wrap;
+}
+.main-content main figure{
+  width: 28%;
+  min-width: 200px;
+  display:block;
+  margin: 1px auto;
+}
+.main-content main figure img{
+    width: 100%;
+    height: 200px;
+}
+.main-content main figure p{
+   margin: 4px;
+   background: rgba(0, 0, 0, .2);
+   text-align:center;
+   font-size:2vw
+}
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background:#005A88;
+    display: flex;
+    justify-content: space-between;
+}
+footer .data{
+    color:white;
+}
+footer .white-logo {
+width:30%
+}
+footer .social-midia {
+    width:30%
+    }
+    footer .social-midia img {
+        width:13%;
+        margin: 0 5%;
+        }
+footer .white-logo img {
+    width:47%;
+    }
+
+/* *******************************8888
+     PAGINA DE RECEITAS
+**************************************/
+.content{
+    background-image: url("./assets/toalhaDeMesa.png");  
+}
+
+.receipe-content{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+.receipe-content .category-receipe{
+    display:block;
+    padding:10px;
+    height: 300px;
+    overflow: scroll;
+    background:#FBD4D0;
+    margin:20px;
+}
+.receipe-content .category-receipe button{
+    padding:15px;
+    margin:15px auto;
+    border-radius: 10px;
+    width: 90%;
+    background:lightblue;
+    font-size:1.3vw;
+}
+
+.receipe-content .main-receipe{
+    margin: 5px 5%;
+}
+.receipe-content .main-receipe h1{
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.5vw;
+  font-style: italic;
+} 
+.receipe-content .main-receipe img{
+   width: 80%;
+   margin:5px 10%;
+} 
+
+.content-text{
+    box-sizing: border-box;
+    width: 70%;
+    margin:5px auto;
+    font-family: arial;
+    background:#FBD4D0;
+    padding:5%;
+}
+.content-text p{
+    border:solid 1px black;
+    padding:3%;
+    font-size:2.5vw;
+}
+.content-text h2{  
+    font-size:5vw;
+    margin: 2px auto;
+}
+/* *******************************8888
+     PAGINA DE CONTATO
+**************************************/
+
+.contact{
+    position: relative;
+}
+
+.chef-img{
+    margin: 5px 15%;
+    width: 60%;
+}
+form{
+    width: 50%;  
+    position: absolute;
+    top: 30%;
+    left: 26%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+  label, input{
+    margin-bottom: 10%;
+    height: 30px;
+    width: 78%;
+    font-size: 1.7vw;
+}
+textarea{
+    width:78%;
+    height: 20%;
+}
+
+
+/* *******************************8888
+    MOBILE
+**************************************/
+
+@media(max-width:600px){
+     .contato{     
+    top: 43% !important;
+    left: 78% !important;
+    font-size: 4.5vw ;
+    }
+    header .main-menu{
+        display: none;
+        flex-direction: column;
+        height: 30vh;;
+        z-index: 10;
+        width: 35%;
+        position: absolute;
+        padding: 5px;
+        top: 87%;
+        left: 0%;
+        background: rgba(235, 235, 235, 0.803);
+    }
+    header .btn-hover:hover .main-menu{
+        display:flex
+    }
+    header .main-menu a{
+        font-size:18px
+    }
+
+    .logo-header{
+    position: absolute;
+    top: 3%;
+    left: 38%;
+    width: 28%;
+    }
+    header .btn-mobile{
+        display: block;
+        width: 8%;
+        position: absolute;
+        top: 58%;
+        left: 5%;
+    }
+    .category-receipe{
+        display: none!important;
+    }
+    .receipe-content{
+        display: block;
+    }
+    .receipe-content .main-receipe h1{
+        font-size: 100%;
+    }
+    .main-content h1{
+        font-size: 6.5vw;
+    }
+    .main-content main figure img {
+        width: 100%;
+        height: 80%;
+    }
+    .main-content main figure p {
+        font-size: 6vw;
+        margin: 0px;
+    }
+    .receipe-content .main-receipe h1{
+        font-size: 6.5vw;
+        margin: 1px auto;
+    }
+    footer .white-logo img {
+        width: 87%;
+    }
+    footer .social-midia {
+        width: 55%;
+    }
+    footer .social-midia img{
+        width: 20%;
+    }
+    .chef-img {
+        margin: -26px 5%;
+        width: 90%;
+    }   
+    form{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        width: 100%;
+        position: absolute;
+        top: 23%;
+        left: 13%;
+    }
+    form input {        
+        margin-bottom: 3%;
+        height: 30px;
+        width: 64%;
+    }
+    form label {   
+        
+    margin-bottom: 3%;
+    height: 30px;
+    width: 78%;
+    font-size: 3.7vw;
+    }
+    form textarea{
+        width: 64%;
+        height: 11%;
+    }
+}
